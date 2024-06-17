@@ -1,0 +1,126 @@
+body {
+  @media screen and (max-width: 200px);
+  }
+
+  .Uno{
+    display: flex;
+   align-items: center;
+   justify-content: center;    
+    background-color: rgb(12, 175, 39);
+    font-family: "Bebas Neue"; /* ingreso el nombre de la fuente que importe de google fonts */
+    width: 500px;
+    height: 35px;
+    padding: 45px;
+    margin: 0 auto; 
+    border-radius:5px;
+    border: black solid ;
+    @media screen and (max-width: 200px);
+    
+  }
+
+  .Dos{
+    display: flex;
+   align-items: center;
+   justify-content: center;    
+    background-color: rgb(12, 175, 39);
+    font-family: "Bebas Neue"; /* ingreso el nombre de la fuente que importe de google fonts */
+    width: 350px;
+    height: 35px;
+    padding: 45px;
+    margin: 0 auto; 
+    border-radius:5px;
+    border: black solid ;
+    @media screen and (max-width: 200px);
+  }
+
+  .documento{
+    display: flex;
+   align-items: center;
+   justify-content: center;    
+    background-color: rgb(208, 238, 191);
+    font-family: "Bebas Neue"; /* ingreso el nombre de la fuente que importe de google fonts */
+    margin: 0 auto; 
+    border-radius:5px;
+    border: black solid ;
+    @media screen and (max-width: 200px);
+  }
+  
+  .class1 {
+    display: flex;
+   align-items: center;
+   justify-content: center;    
+    background-color: rgb(70, 216, 13);
+    font-family: "Bebas Neue"; /* ingreso el nombre de la fuente que importe de google fonts */
+    width: 50px;
+    height: 30px;
+    padding: 45px;
+    margin: 0 auto; /* si pongo 0 auto lo que hace es centrarlo en la pagina */
+    align-content: center;
+    background-position: center center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*la funcion @media sirve para condicionar el comportamiento visual de la informacion al reducir o ampliar la pantalla */
+    @media screen and (max-width: 200px) ;
+    flex-direction: column;
+    border-bottom:rgb(241, 10, 10);
+    border-radius: 20px;
+    border: 5px solid rgb(0, 0, 0);
+  }
+  /*.grid-container {
+    display: grid;
+    background-color: #2ee91de1;
+    grid-template-columns: auto ; /* se pone las columnas que quiere que queden*/
+    /*padding: -10px;
+    border: 1px solid rgb(243, 13, 13);
+  }*/
+  /*.row {
+    display: flex;
+    flex-wrap: wrap;
+  }*/
+  .animacion {
+    /*se crea animacion con el codigo   */
+    width: auto;
+    height: auto;
+    background-color: red;
+    position: relative;
+    animation-name: example; /* es el nombre de la animacion y la que debo llamar en el key */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes example {
+    /*son condicionales que cuando pase el 0% de time haga tal cosa,    */
+    0% {
+      background-color: red;
+      left: 1px;
+      top: 0px;
+    }
+    25% {
+      background-color: yellow;
+      left: 10%;
+      top: 0px;
+    }
+    50% {
+      background-color: blue;
+      right: 10%;
+      top: 0px;
+    }
+    75% {
+      background-color: green;
+      left: 0px;
+      top: 0px;
+    }
+    100% {
+      background-color: red;
+      left: 0px;
+      top: 0px;
+    }
+  }
+    .ampliar:hover {
+    transform: scale(1.10); /* Aumentar el tamaño en un 20% al pasar el mouse */
+    transition: transform 0.5s ease; /* Animación suave de la transformación */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+  }
