@@ -38,10 +38,14 @@ const conexion = mysql.createConnection({
     password: "C0m3rc1al.1",
 });
 
-conexion.connect(function(err){
+/*conexion.connect(function(err){
     if(err){
         throw err;
     } else {
         console.log("conexion exitosa");
+        console.log("Servidor escuchando en http://localhost:4000");
     }
-});
+});*/
+
+/* link tutorial 
+https://community.listopro.com/como-conectar-una-base-de-datos-con-javascript/*/
