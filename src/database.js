@@ -28,16 +28,20 @@ module.exports={
     getConnection
 }*/
 
-const mysql = require('mysql2');
+const mysql = require('mysql');
 const {Conecction} = require ("promise-mysql");
 
-const conexion = mysql.createConnection({
+const conexiondb = mysql.createConnection({
     host: "localhost",
     database: "sakila",
     user: "root",
     password: "C0m3rc1al.1",
 });
 
+const getConnection =async()=> await conexiondb;
+module.exports={
+    getConnection
+};
 /*conexion.connect(function(err){
     if(err){
         throw err;
